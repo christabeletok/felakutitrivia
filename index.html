@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivia Flashcards</title>
+  <style>
+    body {
+      position: relative;
+      background-image: linear-gradient(rgba(234, 153, 23, 0.5), rgba(234, 153, 23, 0.5)), url("felakutiiii.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #flashcard-container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #FFFF;
+    }
+
+    
+    .question {
+      background-color: #EA9917;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+  </style>  
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <audio id="correctSound" src="correct_sound.mp3"></audio>
+  <audio id="wrongSound" src="wrong_sound.mp3"></audio>
+</head>
+<body>
+  <div id="flashcard-container">
+    <h2 id="flashcard-title">HOW WELL DO YOU KNOW FELA?</h2>
+    <div id="flashcard">
+      <div class="question">
+        <h3 id="questionText"></h3>
+        <input type="text" id="answerInput" placeholder="Type your answer">
+        <button onclick="checkAnswer()">Submit</button>
+        <button id="endGameButton">End Game</button>
+        <div id="resultMessage"></div>
+        <div id="scoreTracker"></div>
+        <div id="timer"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

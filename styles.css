@@ -1,0 +1,79 @@
+#flashcard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#flashcard-title {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#flashcard {
+  padding: 30px;
+  background-color: #B02E0C;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: white;
+  width: 500px; /* Adjust the width as desired */
+  max-width: 90%;
+}
+
+.scoreTracker {
+  font-style: italic;
+}
+
+
+/* Style for question text */
+#questionText {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for answer input */
+#answerInput {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+/* Style for result message */
+#resultMessage {
+  margin-bottom: 10px;
+}
+
+/* Style for score tracker */
+#scoreTracker {
+  font-weight: bold;
+}
+
+/* Style for "End Game" button */
+#endGameButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for correct result message */
+.correct {
+  color: green;
+}
+
+/* Style for wrong result message */
+.wrong {
+  color: red;
+}
+
+/* Style for answered input */
+.answered {
+  background-color: #f1f1f1;
+}
+
